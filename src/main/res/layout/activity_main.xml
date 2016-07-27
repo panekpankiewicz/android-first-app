@@ -1,0 +1,403 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="#db9d59"
+    tools:context="com.example.patryk.flagi.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ile flag rozpoznasz?"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@android:color/black"
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal"
+        android:background="#db9d59"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        tools:context="com.example.patryk.flagi.MainActivity">
+
+        <ImageView
+            android:id="@+id/jemen"
+            android:src="@drawable/jemen"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            />
+
+        <ToggleButton
+            android:id="@+id/jemenA"
+            android:layout_height="50sp"
+            android:layout_width="100sp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="@drawable/toggle_color"
+            android:textOff="Syria"
+            android:textOn="Syria"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ToggleButton
+            android:id="@+id/jemenB"
+            android:layout_height="50sp"
+            android:layout_width="100sp"
+            android:textOff="Jemen"
+            android:textOn="Jemen"
+            android:onClick="incrementjem"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="@drawable/toggle_color"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ToggleButton
+            android:id="@+id/jemenC"
+            android:layout_height="50sp"
+            android:layout_width="100sp"
+            android:textOff="Egipt"
+            android:textOn="Egipt"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@drawable/toggle_color"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal"
+        android:background="#db9d59"
+        android:layout_weight="1"
+        tools:context="com.example.patryk.flagi.MainActivity">
+
+        <ImageView
+            android:id="@+id/austria"
+            android:src="@drawable/austria"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ToggleButton
+            android:id="@+id/austriaA"
+            android:layout_height="50sp"
+            android:layout_width="100sp"
+            android:onClick="incrementaus"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="@drawable/toggle_color"
+            android:textOff="Austria"
+            android:textOn="Austria"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ToggleButton
+            android:id="@+id/austriaB"
+            android:layout_height="50sp"
+            android:layout_width="100sp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="@drawable/toggle_color"
+            android:textOff="Czad"
+            android:textOn="Czad"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ToggleButton
+            android:id="@+id/austriaC"
+            android:layout_height="50sp"
+            android:layout_width="100sp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@drawable/toggle_color"
+            android:textOff="Dania"
+            android:textOn="Dania"
+            />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal"
+        android:background="#db9d59"
+        android:layout_weight="1"
+        tools:context="com.example.patryk.flagi.MainActivity">
+
+        <ImageView
+            android:id="@+id/estonia"
+            android:src="@drawable/estonia"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ToggleButton
+            android:id="@+id/estoniaA"
+            android:layout_height="50sp"
+            android:layout_width="100sp"
+            android:textOff="Chiny"
+            android:textOn="Chiny"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="@drawable/toggle_color"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ToggleButton
+            android:id="@+id/estoniaB"
+            android:layout_height="50sp"
+            android:layout_width="100sp"
+            android:textOff="Polska"
+            android:textOn="Polska"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="@drawable/toggle_color"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ToggleButton
+            android:id="@+id/estoniaC"
+            android:layout_height="50sp"
+            android:layout_width="100sp"
+            android:textOff="Estonia"
+            android:textOn="Estonia"
+            android:onClick="incrementest"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="@drawable/toggle_color"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal"
+        android:background="#db9d59"
+        android:layout_weight="1"
+        tools:context="com.example.patryk.flagi.MainActivity">
+
+        <ImageView
+            android:id="@+id/gabon"
+            android:src="@drawable/gabon"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ToggleButton
+            android:id="@+id/gabonC"
+            android:layout_height="50sp"
+            android:layout_width="100sp"
+            android:onClick="incrementgab"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@drawable/toggle_color"
+            android:textOff="Gabon"
+            android:textOn="Gabon"
+            />
+
+        <ToggleButton
+            android:id="@+id/gabonA"
+            android:layout_height="50sp"
+            android:layout_width="100sp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@drawable/toggle_color"
+            android:textOff="Czechy"
+            android:textOn="Czechy"
+            />
+
+        <ToggleButton
+            android:id="@+id/gabonB"
+            android:layout_height="50sp"
+            android:layout_width="100sp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@drawable/toggle_color"
+            android:textOff="Japonia"
+            android:textOn="Japonia"
+            />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal"
+        android:background="#db9d59"
+        android:layout_weight="1"
+        tools:context="com.example.patryk.flagi.MainActivity">
+
+        <ImageView
+            android:id="@+id/rosja"
+            android:src="@drawable/rosja"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ToggleButton
+            android:id="@+id/rosjaA"
+            android:layout_height="50sp"
+            android:layout_width="100sp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@drawable/toggle_color"
+            android:textOff="Litwa"
+            android:textOn="Litwa"
+            />
+
+        <ToggleButton
+            android:id="@+id/rosjaB"
+            android:layout_height="50sp"
+            android:layout_width="100sp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@drawable/toggle_color"
+            android:textOff="Malta"
+            android:textOn="Malta"
+            />
+
+        <ToggleButton
+            android:id="@+id/rosjaC"
+            android:layout_height="50sp"
+            android:layout_width="100sp"
+            android:onClick="incrementros"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@drawable/toggle_color"
+            android:textOff="Rosja"
+            android:textOn="Rosja"
+            />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="#db9d59"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_weight="1"
+        tools:context="com.example.patryk.flagi.MainActivity">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Podsumuj"
+            android:background="#070"
+            android:textColor="#ffffff"
+            android:layout_weight="3"
+            android:onClick="submitResult"
+            android:scaleType="fitCenter"
+            android:gravity="center"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Reset"
+            android:background="#a00"
+            android:textColor="#ffffff"
+            android:layout_weight="10"
+            android:scaleType="fitCenter"
+            android:gravity="center"
+            android:onClick="resetResult"
+            android:id="@+id/reset"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/quantity_text_view"
+        android:textSize="24sp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:background="#a71189"
+        android:textColor="#ffffff"
+        />
+
+
+</LinearLayout>
